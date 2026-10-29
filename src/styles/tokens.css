@@ -1,0 +1,101 @@
+/* =========================================================
+   DESIGN TOKENS · Pickleball Ban KT
+   Bản sắc Vietnam Airlines: Navy sâu + Vàng sen + Xanh trời
+   ========================================================= */
+:root {
+  color-scheme: dark;
+
+  /* nền */
+  --bg-0: #021428;
+  --bg-1: #04203a;
+  --bg-2: #062a4b;
+  --surface: rgba(16, 52, 92, 0.55);
+  --surface-2: rgba(22, 66, 114, 0.6);
+  --surface-solid: #0c3762;
+  --glass: rgba(255, 255, 255, 0.045);
+  --glass-strong: rgba(255, 255, 255, 0.08);
+  --line: rgba(147, 185, 216, 0.16);
+  --line-strong: rgba(147, 185, 216, 0.3);
+
+  /* thương hiệu */
+  --gold: #f3c43c;
+  --gold-2: #ffd76a;
+  --gold-deep: #c99520;
+  --sky: #4aa3db;
+  --sky-2: #7cc3ef;
+  --blue: #2e86c1;
+
+  /* trạng thái */
+  --live: #ff9f1c;
+  --ok: #3ed07a;
+  --bad: #ff6b5e;
+  --info: #7cc3ef;
+
+  /* chữ */
+  --text: #eaf3ff;
+  --text-2: #b9d0e6;
+  --text-3: #7f9db9;
+  --on-gold: #2a1e00;
+
+  /* gradient */
+  --grad-gold: linear-gradient(135deg, #ffe08a 0%, #f3c43c 45%, #d9a21e 100%);
+  --grad-brand: linear-gradient(135deg, #f3c43c 0%, #2e86c1 100%);
+  --grad-sky: linear-gradient(135deg, #4aa3db, #2e6fb0);
+  --grad-panel: linear-gradient(180deg, rgba(20, 62, 108, 0.6), rgba(10, 36, 66, 0.5));
+
+  /* typography */
+  --font: 'Be Vietnam Pro', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+  --fs-xs: 11px;
+  --fs-sm: 12.5px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 20px;
+  --fs-2xl: 26px;
+  --fs-3xl: clamp(28px, 4vw, 44px);
+
+  /* spacing / radius / shadow */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-full: 999px;
+  --shadow-1: 0 6px 18px -8px rgba(0, 0, 0, 0.5);
+  --shadow-2: 0 18px 40px -18px rgba(0, 0, 0, 0.65);
+  --glow-gold: 0 10px 30px -10px rgba(243, 196, 60, 0.55);
+  --blur: blur(16px) saturate(140%);
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --t-fast: 0.15s var(--ease);
+  --t-med: 0.3s var(--ease);
+
+  --rail-w: 92px;
+}
+
+/* chế độ sáng (tuỳ chọn) */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg-0: #e9f1fa;
+  --bg-1: #f2f7fc;
+  --bg-2: #ffffff;
+  --surface: rgba(255, 255, 255, 0.75);
+  --surface-2: rgba(240, 246, 252, 0.9);
+  --surface-solid: #ffffff;
+  --glass: rgba(6, 42, 75, 0.035);
+  --glass-strong: rgba(6, 42, 75, 0.07);
+  --line: rgba(6, 42, 75, 0.12);
+  --line-strong: rgba(6, 42, 75, 0.22);
+  --text: #0b2440;
+  --text-2: #36536f;
+  --text-3: #6a849d;
+  --gold: #d9a21e;
+  --grad-panel: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(244, 248, 252, 0.85));
+  --shadow-2: 0 18px 40px -22px rgba(6, 42, 75, 0.35);
+}
